@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  node_backend:
+    container_name: next-docker
+    image: next-docker:0.0.1
+    build:
+      context: .
+    ports:
+      - "3000:3000"
